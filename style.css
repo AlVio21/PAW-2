@@ -6,16 +6,40 @@ body{
     background-color: cadetblue;
     font-family:Cambria;
 }
+/* media query web desgin*/
+/* tablet : layout yang ditampilkan 2 kolom */
+@media screen and (min-width: 600px){
+    body{
+        background-color: yellow;
+    }
+    .col-sm-6{
+        width: 50%;
+        float: left;
+    }
+    .col-sm-12{
+        width: 100%;
+    }
+}
 
-/* class selector */
+/* desktop : layout yang ditampilkan 4 kolom */
+@media screen and (min-width: 992px){
+    body{
+        background-color: green;
+    }
+    .col-lg-3{
+        width: 25%;
+        float: left;
+    }
+    .col-sm-12{
+        width: 50%;
+        float:left;
+    }
+}
 .text-primary{
     color: aqua;
 }
 
-.col{
-    width: 25%;
-    float: left;
-}
+
 .col-50{
     width: 50%;
     float: left;
@@ -25,9 +49,18 @@ body{
     width: 100%;
     max-height: 500px;
 }
-.rounded{
+.rounded2{
     border-radius: 50%;
 }
 .p-1{
     padding: 10px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .rounded{
+    border-radius: 25%;
 }
