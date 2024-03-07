@@ -19,6 +19,10 @@ body{
     .col-sm-12{
         width: 100%;
     }
+    .col-lg-4{
+        width: 100%;
+        float: left;
+    }
 }
 
 /* desktop : layout yang ditampilkan 4 kolom */
@@ -33,6 +37,10 @@ body{
     .col-sm-12{
         width: 50%;
         float:left;
+    }
+    .col-lg-4{
+        width: 33.33%;
+        float: left;
     }
 }
 .text-primary{
@@ -62,5 +70,9 @@ body{
   }
 
   .rounded{
-    border-radius: 25%;
+    border-radius: 20%;
+}
+
+.text-danger{
+    color: white;
 }
